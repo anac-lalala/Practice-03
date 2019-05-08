@@ -1,0 +1,262 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size:24px;
+    margin-bottom: 40px;
+    
+}
+
+.header{
+    background-color: #1c252c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+}
+
+.header img{
+    height: 50px;
+}
+
+.header ul{
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+
+.header ul li{
+    height: inherit;
+}
+
+.header a {
+    color: white; 
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.menu{
+    height: inherit;
+}
+ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: inherit;
+}
+
+figure{
+    margin: 0;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0px;
+}    
+
+h1 strong{
+    color: #026fff;
+}    
+
+.hero{
+    height: 300px;
+    background-color: #1b2127;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit: cover;
+}
+
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+    
+}    
+
+.project{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    align-self: auto;
+    justify-content: space-between;
+}    
+
+.project-title{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 13px
+}
+.project-course,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+
+.project-details {
+    width: 500px;
+}    
+
+.project-imageContainer{
+    width: 500px;
+}
+
+.event-list-title{
+    margin-left: 20px;
+}
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event{
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #f4fbff;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background: white;
+    position: relative;
+    padding: 20px;
+}
+
+.event-description{
+    text-align: center;
+}
+
+.event-url{
+    color: #026fff;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+.contact{
+    background-color: #026fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social{
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+}
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+}
+.social-link.github{
+    background-image: url('../images/github.svg');
+}
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+}
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.form-email input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url(../images/envelope.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.footer{
+    background-color: #1c252c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img {
+    width: 70px;
+    vertical-align: middle
+}
+
+.footer a{
+    color: white;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
