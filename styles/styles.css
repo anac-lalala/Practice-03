@@ -247,18 +247,15 @@ h1 strong{
     margin: 0 10px;
 }
 
-.social-link.twitter{
-    background-image: url('../images/twitter.svg');
+.social-link.icon-twitter, 
+.social-link.icon-facebook,
+.social-link.icon-github,
+.social-link.icon-instagram{
+    color: white;
+    text-decoration: none;
+    font-size: 3em;
 }
-.social-link.facebook{
-    background-image: url('../images/facebook.svg');
-}
-.social-link.github{
-    background-image: url('../images/github.svg');
-}
-.social-link.instagram{
-    background-image: url('../images/instagram.svg');
-}
+
 .form-email h3{
     font-family: 'Source Sans Pro', sans-serif;
 
@@ -521,6 +518,13 @@ h1 strong{
         width: 40px;
         height: 40px;
         background-size: 100%;
+    }
+
+    .social-link.icon-twitter, 
+    .social-link.icon-facebook,
+    .social-link.icon-github,
+    .social-link.icon-instagram {
+        font-size:2.5em;
     }
 
 }
