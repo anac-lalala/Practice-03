@@ -10,6 +10,7 @@
     <title>Platzi Portfolio</title> 
 </head>
 <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -95,7 +96,8 @@
             </article>
             <article class="event">
                 <figure class="event-imageContainer">
-                    <img class="event-image" src="images/platzi-conf.jpg" alt="Platzi Conf" width="500px">
+                    <video class="html-video" src="videos/f8.mp4" width="560" height="315" controls></video>    
+                    <!-- <img class="event-image" src="images/platzi-conf.jpg" alt="Platzi Conf" width="500px"> -->
                 </figure>
                 <div class="event-detail">
                     <h3 class="event-tittle">Platzi Conf Mexico 2018</h3>
@@ -105,7 +107,10 @@
             </article>
             <article class="event">
                 <figure class="event-imageContainer">
-                    <img class="event-image" src="images/platzi-conf.jpg" alt="Platzi Conf" width="500px">
+                    <div class="flexible-video">
+                        <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/BIS7cWGgJg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- <img class="event-image" src="images/platzi-conf.jpg" alt="Platzi Conf" width="500px"> -->
                 </figure>
                 <div class="event-detail">
                     <h3 class="event-tittle">Platzi Conf Mexico 2018</h3>
@@ -143,5 +148,37 @@
             </div>
         </div>
     </footer>
+    <script>
+        // console.log('Wish you luck with this!');
+        
+        const ipad = window.matchMedia('screen and (max-width:767px)')
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burger-menu')
+        
+        // console.log(menu);
+        // console.log(burgerButton);
+
+
+
+        ipad.addListener(validation)
+
+        function validation(event) {
+            if(event.matches){
+                burgerButton.addEventListener('click', hideShow)
+            } else {
+                burgerButton.removeEventListener('click', hideShow)
+            }
+        }
+
+        validation(ipad)
+
+        function hideShow(){
+            if(menu.classList.contains('is-active')){
+            menu.classList.remove('is-active')
+            } else {
+            menu.classList.add('is-active')
+            }
+        }
+    </script>
 </body>
 </html>
