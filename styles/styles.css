@@ -252,7 +252,7 @@ h1 strong{
 .social-link.icon-instagram{
     color: white;
     text-decoration: none;
-    font-size: 2.8em;
+    font-size: 3em;
 }
 
 .form-email h3{
@@ -478,15 +478,10 @@ h1 strong{
     .event img{
         width: 100%;
     }
-    .social-link{
-        display: inline-block;
-        width: 28px;
-        height: 28px;
-        margin: 0 10px;
-    }
+
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:576px){
     h1{
         font-size: 1.5em;
     }
